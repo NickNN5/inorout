@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Contacto" representedClassName="Contacto" syncable="YES">
+        <attribute name="apellidos" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="estado" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="foto" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telefono" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tiene" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Registro" inverseName="registradoPor" inverseEntity="Registro" syncable="YES"/>
+    </entity>
+    <entity name="Registro" representedClassName="Registro" syncable="YES">
+        <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="tipoRegistro" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="registradoPor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contacto" inverseName="tiene" inverseEntity="Contacto" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Contacto" positionX="-648" positionY="-162" width="128" height="148"/>
+        <element name="Registro" positionX="-54" positionY="27" width="128" height="88"/>
+    </elements>
+</model>
