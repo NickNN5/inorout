@@ -127,7 +127,7 @@
                                 <rect key="frame" x="0.0" y="66" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="baU-tE-mq9" id="g85-et-dmh">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="39.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="40"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jkh-R1-6QK">
@@ -387,7 +387,7 @@
                                 <rect key="frame" x="0.0" y="22" width="320" height="52"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BJh-Dj-GHN" id="9oC-xU-2Tn">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="51.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Entrada" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rP-CJ-lEw">
@@ -437,7 +437,7 @@
         <scene sceneID="KWs-LI-bim">
             <objects>
                 <navigationController id="B5E-Hp-yh4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contactos" id="mgT-Tc-07I"/>
+                    <tabBarItem key="tabBarItem" title="Contactos" image="Person_out.png" selectedImage="Person_out.png" id="mgT-Tc-07I"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XlM-MX-f3M">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -454,7 +454,7 @@
         <scene sceneID="1wc-Ae-4z2">
             <objects>
                 <navigationController id="h37-SU-dGj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contactos En el Edificio" id="znT-YA-twv"/>
+                    <tabBarItem key="tabBarItem" title="Contactos En el Edificio" image="Person_In.png" selectedImage="Person_In.png" id="znT-YA-twv"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FWX-bU-uBn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -471,7 +471,7 @@
         <scene sceneID="ef5-2L-PfA">
             <objects>
                 <navigationController id="oX6-7V-EkO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Estado del Edificio" id="bdU-y2-3bO"/>
+                    <tabBarItem key="tabBarItem" title="Estado del Edificio" image="building.png" selectedImage="building.png" id="bdU-y2-3bO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3EU-p8-r7N">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -540,6 +540,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Person_In.png" width="25" height="25"/>
+        <image name="Person_out.png" width="25" height="25"/>
+        <image name="building.png" width="25" height="25"/>
         <image name="contactoAdd.jpg" width="237" height="213"/>
     </resources>
     <inferredMetricsTieBreakers>
